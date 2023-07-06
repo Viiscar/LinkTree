@@ -1,11 +1,16 @@
+@font-face {
+    font-family: BookFLF;
+    src: url(./SansSerifBookFLF.ttf.woff);
+  }
+
 html, body {
     margin: 0;
     height: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'BookFLF', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 html{
-    background-image: url('./images/tree.jpg');
+    background-color: #c0181c;
     background-size:cover;
 }
 
@@ -42,11 +47,6 @@ body {
     max-width: 500px;
 }
 
-.source{
-    font-size:small;
-    margin-top:50px;
-}
-
 .profilePicture, .profilePicture img {
     position: relative;
     width: 130px;
@@ -77,7 +77,7 @@ body {
 .link {
     position: relative;
     background-color: transparent;
-    color: var(--accentColor);
+    color: white;
     border: solid var(--accentColor) 2px;
     border-radius: 10px;
     font-size: 1rem;
@@ -93,15 +93,8 @@ body {
 
 @media (hover: hover) {
     .link:hover {
-        background-color: var(--accentColor);
-        color: #000; /* Fallback for older browsers */
-        color: rgba(0, 0, 0, 0.5);
+        background-color: white;
+        color: #c0181c;
     }
-}
-
-.link:active {
-    background-color: var(--accentColor);
-    color: #000; /* Fallback for older browsers */
-    color: rgba(0, 0, 0, 0.5);
 }
 
